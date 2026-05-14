@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-function mktouch(filePath) {
+function nestfile(filePath) {
   const resolvedPath = path.resolve(filePath);
   const dir = path.dirname(resolvedPath);
 
@@ -23,8 +23,8 @@ function mktouch(filePath) {
 
 function run(args) {
   if (args.length === 0) {
-    console.error("Usage: mktouch <file1> [file2] [file3] ...");
-    console.error("Example: mktouch src/client/dto/create-client.dto.ts");
+    console.error("Usage: nestfile <file1> [file2] [file3] ...");
+    console.error("Example: nestfile src/client/dto/create-client.dto.ts");
     process.exit(1);
   }
 
@@ -32,7 +32,7 @@ function run(args) {
 
   for (const filePath of args) {
     try {
-      const result = mktouch(filePath);
+      const result = nestfile(filePath);
       if (result.created) {
         console.log(`\x1b[32m✔\x1b[0m Created: ${filePath}`);
       } else {
@@ -47,4 +47,4 @@ function run(args) {
   if (hasError) process.exit(1);
 }
 
-module.exports = { mktouch, run };
+module.exports = { nestfile, run };
