@@ -1,6 +1,6 @@
 {
   "name": "nestfile",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "touch command with auto directory creation — works on Windows, Mac & Linux",
   "main": "src/index.js",
   "bin": {
