@@ -1,0 +1,25 @@
+{
+  "name": "mktouch",
+  "version": "1.0.0",
+  "description": "touch command with auto directory creation — works on Windows, Mac & Linux",
+  "main": "src/index.js",
+  "bin": {
+    "mktouch": "./bin/mktouch.js"
+  },
+  "scripts": {
+    "test": "node test/index.test.js"
+  },
+  "keywords": [
+    "touch",
+    "mkdir",
+    "cli",
+    "file",
+    "create",
+    "mktouch"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
