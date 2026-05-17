@@ -9,6 +9,10 @@
   "scripts": {
     "test": "node test/index.test.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bhaviraj2004/nestfile"
+  },
   "keywords": [
     "touch",
     "mkdir",
